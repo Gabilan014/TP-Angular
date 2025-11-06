@@ -66,7 +66,7 @@ src/assets/img/
 
 Y se referencian así:
 
-<img src="assets/img/imagen.png">
+img src="assets/img/imagen.png"
 
 🎨 Estilos y diseño
 
