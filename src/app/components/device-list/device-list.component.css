@@ -1,0 +1,111 @@
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #0057d8;
+  color: white;
+  font-weight: bold;
+}
+
+tr {
+  transition: background-color 0.25s ease;
+}
+
+td {
+  background-color: #fafafa;
+}
+
+/* animación hover fila */
+tr:hover td {
+  background-color: #eaf1ff;
+}
+
+
+form {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 8px;
+  gap: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  animation: fadeIn 0.4s ease;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #dadce0;
+  width: 100%;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+
+input:focus {
+  border-color: #0057d8;
+  transform: scale(1.02);
+  outline: none;
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: #0057d8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+
+button:hover:not(:disabled) {
+  background-color: #0b74f5;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #b8c0cc;
+}
+
+
+.modal-header {
+  background-color: #0057d8;
+  color: white;
+}
+
+input.form-control {
+  border-radius: 6px;
+  border: 1px solid #dadce0;
+}
+
+
+@media (max-width: 767px) {
+  form {
+    flex-direction: column;
+  }
+  button {
+    width: 100%;
+  }
+}
